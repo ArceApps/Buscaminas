@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+/**
+ * @author programacion
+ *
+ */
+package Buscaminas;
