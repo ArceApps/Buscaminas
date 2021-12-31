@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author programacion
+ * @author ArceApps
  *
  */
 package Buscaminas;

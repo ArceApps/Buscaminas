@@ -26,7 +26,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
 
 /**
- * @author programacion
+ * @author ArceApps
  *
  */
 public class VPrincipal extends JFrame {
@@ -57,8 +57,8 @@ public class VPrincipal extends JFrame {
 	private Color colorAmarillo = new Color(255,0,127);
 
 	/**
-	 * Convertimos mina en una imagen. creamos una imagen nueva dándole las
-	 * dimensiones que queramos a la antigua. Lo mismo con las demás imágenes.
+	 * Convertimos mina en una imagen. creamos una imagen nueva dï¿½ndole las
+	 * dimensiones que queramos a la antigua. Lo mismo con las demï¿½s imï¿½genes.
 	 */
 	private ImageIcon mina = new ImageIcon("src/images/mine.png");
 	private Image imagenMina = mina.getImage();
@@ -142,9 +142,9 @@ public class VPrincipal extends JFrame {
 	public JMenuBar menu() {
 		this.barraMenu = new JMenuBar();
 		this.menuVer = new JMenu("Ver");
-		this.menuEdicion = new JMenu("Edición");
+		this.menuEdicion = new JMenu("Ediciï¿½n");
 		this.menuAyuda = new JMenu("Ayuda");
-		this.menuEstadisticas = new JMenu("Estadísticas");
+		this.menuEstadisticas = new JMenu("Estadï¿½sticas");
 
 		this.itmPrincipiante = new JMenuItem("Principiante");
 		this.itmIntermedio = new JMenuItem("Intermedio");
@@ -334,7 +334,7 @@ public class VPrincipal extends JFrame {
 		jugar.setIcon(playJugar);
 		for (int i = 0; i < filas; i++) {
 			for (int j = 0; j < columnas; j++) {
-				// Quito el controlador de los botones. para añadirlos de nuevo con
+				// Quito el controlador de los botones. para aï¿½adirlos de nuevo con
 				// los nuevos valores de minas, filas y columnas.
 				botones[i][j].removeMouseListener(c);
 				botones[i][j].setIcon(null);
@@ -353,7 +353,7 @@ public class VPrincipal extends JFrame {
 		botones[i][j].setText("");
 		botones[i][j].setIcon(minaBuena);
 		botones[i][j].setBackground(Color.red);
-		JOptionPane.showMessageDialog(null, "¡¡HA PERDIDO!!");
+		JOptionPane.showMessageDialog(null, "ï¿½ï¿½HA PERDIDO!!");
 	}
 
 	public void mostrarTodasMinas(int[][] casillas, boolean[][] bandera) {
@@ -380,7 +380,7 @@ public class VPrincipal extends JFrame {
 
 	public void ganador(int nMinas) {
 		if (nMinas == 0) {
-			JOptionPane.showMessageDialog(null, "¡¡BIEN, HAS GANADO!!");
+			JOptionPane.showMessageDialog(null, "ï¿½ï¿½BIEN, HAS GANADO!!");
 		}
 	}
 
